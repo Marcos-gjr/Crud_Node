@@ -1,0 +1,36 @@
+<h2>Listagem de livros</h2>
+
+<p><a href="http://localhost:3000/novo">Cadastrar livros</a></p>
+
+<table border="1">
+   <tr>
+      <td>Codigo</td>
+      <td>Título</td>
+      <td>Autor</td>
+      <td>Ano</td>
+      <td>Ações</td>
+   </tr>
+
+   <% if (livros.length == 0) { %>
+      <tr>
+         <td colspan="5">
+            Nenhum livro cadastrado
+         </td>
+      </tr>
+
+   <% } %>
+ 
+   <% for(let i=0; i<livros.length; i++ ){ %>
+      <tr>
+         <td><%= livros[i].isbn %></td>
+         <td><%= livros[i].nome %></td>
+         <td><%= livros[i].autor %></td>
+         <td><%= livros[i].ano_publicacao %></td>
+         <td> 
+            <a href="/alterar_Livro/<%=livros[i].isbn%>">alterar</a> | <a href="">Excluir</a>
+         </td>
+      </tr>
+ <% } %>
+
+
+</table>

@@ -1,0 +1,17 @@
+npm install express --save  # Serve para controlar as rotas entre o browser e o servidor
+                            # Controla o que é e o que não é acessável dentro do site
+                            # Site recebe uma requisição, se ela for validada, manda para o hd e retorna a resposta, caso não, é bloqueada ali mesmo
+                            # Verifica se a rota escolhida é uma rota possivel
+                            # Ja tem http imbutido
+
+app.get # Pega o endereço da barra de pesquisa do browser
+app.post# Pega as informações deixadas em algum formulário com method post
+
+npm install express-session --save  # Controla a sessão de uso juntamente com o express
+                                     
+npm install ejs --save  # Permite a tradução do html para 
+                        # Renderizador de página html
+
+npm install bodyparser --save # Permite tratar as infomações como objetos
+
+mysql2/promise # Permite utilizar async e await dentro do codigo
